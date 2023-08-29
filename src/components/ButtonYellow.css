@@ -1,0 +1,8 @@
+.yellow-btn:hover {
+    background-color: #ddbb33 !important;
+}
+
+.yellow-btn a {
+    text-decoration: none;
+    color: #181a20;
+}

@@ -1,0 +1,129 @@
+.nav {
+    height: 64px;
+    width: 100%;
+    background-color: #181a20;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    position: relative;
+}
+
+.nav-logo img {
+    height: 24px;
+}
+
+.nav-logo {
+    position: relative;
+    display: flex;
+}
+
+.nav-logo::after {
+    content: "";
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    width: 15px;
+    height: 1px;
+    background-color: white;
+    transform: rotate(90deg) translate(0, -50%);
+}
+
+.nav-menu {
+    display: flex;
+    width: 350px;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 35px;
+}
+
+.icons {
+    margin-left: auto;
+    margin-right: 20px;
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    align-items: center;
+    color: #eaecef;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+.icons i:hover {
+    color: orange;
+}
+
+.log-in {
+    color: #eaecef;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 20px;
+
+    &:hover {
+        color: orange;
+    }
+}
+
+.burger {
+    display: none;
+}
+
+.off-canvas {
+    position: absolute;
+    top: 0;
+    background-color: rgb(30, 35, 41);
+    width: min(450px, 100vw);
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.canvas-items {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(100% - 50px);
+}
+
+@media (max-width: 1000px) {
+    .mobile-hide {
+        display: none !important;
+    }
+
+    .nav-logo::after {
+        display: none;
+    }
+
+    .burger {
+        display: inline-block;
+        color:#eaecef;
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+
+    .nav-logo img {
+        height: 22px;
+    }
+
+    .close {
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        font-size: 30px;
+        color: #eaecef;
+        cursor: pointer;
+    }
+}
