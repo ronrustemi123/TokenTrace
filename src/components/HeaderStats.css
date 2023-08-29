@@ -1,0 +1,38 @@
+.header-stats {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 250px;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 250px;
+    justify-content: center;
+
+}
+
+.stat-title {
+    font-size: 32px;
+    color: #eaecef;
+    font-weight: 600;
+    padding-bottom: 6px;
+}
+
+.stat-desc {
+    color: #eaecef;
+}
+
+@media (max-width: 768px) {
+    .stat {
+        width: 90%;
+    }
+    .stat-title {
+        font-size: 24px;
+    }
+
+    .stat-desc {
+        font-size: 12px;
+    }
+}

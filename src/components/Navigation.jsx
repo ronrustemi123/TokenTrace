@@ -3,7 +3,6 @@ import logoImg from '../assets/logo-img.png'
 import logoText from '../assets/logo.png'
 import NavLink from './NavLink'
 import ButtonYellow from './ButtonYellow'
-import DropMenu from './DropMenu'
 import { useState } from 'react'
 
 
@@ -37,14 +36,14 @@ const Navigation = () => {
             </div>
 
             <a href="/" className='log-in mobile-hide'>Log In</a>
-            <ButtonYellow text='Register' padding='8px 15px' size='14px'/>
+            <ButtonYellow text='Register' padding='8px 15px' size='14px' weight='400'/>
 
             {/* This is for mobile burger menu */}
             <i className="fa-solid fa-bars burger" onClick={handleClick}></i>
             <div className="off-canvas" style={{left: pos}}>
                 <i onClick={handleClick} className="fa-solid fa-xmark close"></i>
                 <div className="canvas-items">
-                    <ButtonYellow text='Register' padding='10px 100px' size='14px'/>
+                    <ButtonYellow text='Register' padding='10px 100px' size='18px' weight='500'/>
                     {linkText.map((el, i) => <NavLink text={el} key={i}/>)}
                 </div>
             </div>

@@ -8,6 +8,12 @@
     position: relative;
 }
 
+@media (max-width: 768px) {
+    .nav {
+        padding: 0 15px;
+    }
+}
+
 .nav-logo img {
     height: 24px;
 }
@@ -78,13 +84,14 @@
     position: absolute;
     top: 0;
     background-color: rgb(30, 35, 41);
-    width: min(450px, 100vw);
+    width: min(450px, 100%);
     height: 100vh;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     display: flex;
     transition: all 0.2s ease-in-out 0s;
+    z-index: 999;
 }
 
 .canvas-items {

@@ -1,0 +1,25 @@
+.section-link {
+    font-size: 14px;
+    text-decoration: none;
+    color: #848E9C;
+    display: flex;
+    align-items: center;
+    width: 170px;
+
+    
+    &:hover {
+        color: orange;
+    }
+}
+
+.section-link i {
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .section-link {
+        padding-left: 12px;
+    }
+}

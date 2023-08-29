@@ -34,6 +34,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	font-family: 'Inter';
+	background-color: #0b0e11;
 }
 ol, ul {
 	list-style: none;

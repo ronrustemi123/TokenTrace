@@ -11,7 +11,9 @@ const ButtonYellow = (props) => {
         borderRadius: '5px',
         cursor: 'pointer',
         fontSize: props.size,
-        textAlign: 'center'
+        textAlign: 'center',
+        fontWeight: props.weight,
+        width: props.width
     }
 
     return ( 

@@ -1,0 +1,23 @@
+.illustrations {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: inline-block;
+}
+
+.illust-div {
+    width: 50%;
+}
+
+@media (max-width: 1024px) {
+    .illust-div {
+        width: 60%;
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .illust-div {
+        display: none;
+    }
+}
