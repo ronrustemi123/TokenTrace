@@ -45,13 +45,10 @@
     }
 }
 @media (max-width: 768px) {
-    .header-top {
-        width: 100%;
-    }
-
+   
     .header {
         padding: 0 10px;
-        height: 89vh;
+        height: 78vh;
     }
     .header-bottom {
         display: grid;
@@ -59,8 +56,13 @@
         grid-template-rows: 1fr 1fr;
         gap: 10px;
         width: 100%;
-        margin-top: -150px;
+        margin-top: 140px;
         padding: 0 10px;
+
+    }
+
+    .header-top {
+        height: 40%;
     }
     
 }

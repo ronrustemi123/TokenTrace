@@ -1,0 +1,37 @@
+.explore {
+    height: 100vh;
+    width: min(1200px, 93%);
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.explore-container {
+    display: flex;
+    gap: 30px;
+    height: 80%;
+    align-items: center;
+    margin: 50px 0;
+}
+
+@media (max-width: 1024px) {
+    .explore-container {
+        flex-direction: column;
+
+    }
+    .explore {
+        height: 130vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .explore {
+        height: 160vh;
+    }
+
+    .explore-container {
+       margin: 0;
+    }
+}

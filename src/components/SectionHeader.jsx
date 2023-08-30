@@ -2,7 +2,7 @@ import './SectionHeader.css'
 
 const SectionHeader = (props) => {
     return (
-        <h1 className="section-header">{props.text}</h1>
+        <h1 className="section-heading">{props.text}</h1>
     );
 }
  

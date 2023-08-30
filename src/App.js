@@ -4,6 +4,9 @@ import Header from './components/Header';
 import AdSection from './components/AdSection';
 import Main from './components/Main';
 import PopularCryptos from './components/PopularCryptos';
+import Portfolio from './components/Portfolio';
+import Explore from './components/Explore';
+import Protect from './components/Protect';
 
 function App() {
   return (
@@ -13,6 +16,9 @@ function App() {
       <Main>
         <AdSection/>
         <PopularCryptos/>
+        <Portfolio/>
+        <Explore/>
+        <Protect/>
       </Main>
     </div>
   );

@@ -8,7 +8,7 @@ const Coin = (props) => {
 
     useEffect(() => {
         if(props.coins.price_change_percentage_24h < 0) {
-            setColor('red')
+            setColor('rgb(246, 70, 93)')
         }else {
             setColor('rgb(14, 203, 129)')
         }

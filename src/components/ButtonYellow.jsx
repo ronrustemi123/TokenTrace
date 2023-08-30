@@ -8,7 +8,7 @@ const ButtonYellow = (props) => {
         color: '#181a20',
         border: 'none',
         outline: 'none',
-        borderRadius: '5px',
+        borderRadius: '4px',
         cursor: 'pointer',
         fontSize: props.size,
         textAlign: 'center',

@@ -30,7 +30,7 @@ const Header = () => {
                 <HeaderIllustrations/>
             </div>
             <div className="header-bottom">
-                {stats.map(el => <HeaderStats text={el.text} desc={el.desc}/>)}
+                {stats.map((el, index) => <HeaderStats text={el.text} desc={el.desc} key={index}/>)}
             </div>
         </header>
     );

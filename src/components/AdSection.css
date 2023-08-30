@@ -21,7 +21,7 @@
 
 .slide {
     margin: 0 auto;
-    width: min(1200px, 95%) !important;
+    width: min(1200px, 94%) !important;
 }
 
 .indicator {
@@ -47,8 +47,9 @@
         height: 100%;
     }
     .ad-section {
-        height: 35vh;
+        height: 27vh;
         padding: 20px 0;
+        margin-bottom: 10px;
     }
 
 }

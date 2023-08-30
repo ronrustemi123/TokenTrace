@@ -1,0 +1,47 @@
+.port-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.port-item {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    gap: 30px;
+    margin: 70px 0;
+    width: 80%;
+}
+
+.text-cont h2 {
+    color: #eaecef;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.text-cont p {
+    color: #B7BDC6;
+    line-height: 1.5em;
+}
+
+@media (max-width: 768px) {
+    .port-item {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        height: 200px;
+        margin: 10px 0;
+    }
+
+    .text-cont h2 {
+        font-size: 20px;
+    }
+    .text-cont p {
+        font-size: 14px;
+    }
+    .port-icon {
+        width: 68px;
+        height: 68px;
+    }
+}

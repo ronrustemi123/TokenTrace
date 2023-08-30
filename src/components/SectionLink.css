@@ -4,8 +4,7 @@
     color: #848E9C;
     display: flex;
     align-items: center;
-    width: 170px;
-
+    margin-top: 15px;
     
     &:hover {
         color: orange;
@@ -18,8 +17,3 @@
 }
 
 
-@media (max-width: 768px) {
-    .section-link {
-        padding-left: 12px;
-    }
-}

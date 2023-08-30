@@ -62,6 +62,9 @@
     text-decoration: none;
     font-size: 20px;
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 @media (max-width: 1024px) {
@@ -93,16 +96,22 @@
         height: auto;
     }
     .header-form {
-        height: 350px;
+        height: 330px;
     }
 
     .header-link {
-        margin-top: 30px;
+        margin-top: 40px;
         font-size: 14px;
         padding-left: 10px;
     }
     .header-form-container {
         height: 150px;
+        margin-top: 10px;
     }
     
+}
+
+.fa-gift {
+    color: #fcd535;
+    font-size: 16px;
 }

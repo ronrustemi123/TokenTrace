@@ -1,0 +1,40 @@
+.protect-icon {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.protect-item {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    gap: 10px;
+    margin: 70px 0;
+    width: 100%;
+}
+
+.protect-text h2 {
+    color: #eaecef;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.protect-text p {
+    color: #B7BDC6;
+    line-height: 1.5em;
+}
+
+
+@media (max-width: 768px) {
+    .protect-item {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 140px;
+        margin-top: 40px;
+    }
+
+    .protect-text p {
+        font-size: 14px;
+    }
+}

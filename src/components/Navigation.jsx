@@ -13,7 +13,7 @@ const Navigation = () => {
     const [pos, setPos] = useState('-500vw');
 
     const handleClick = () => {
-        if(pos == '0') {
+        if(pos === '0') {
             setPos('-500vw')
         }else {
             setPos('0')

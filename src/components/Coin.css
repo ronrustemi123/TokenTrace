@@ -21,6 +21,10 @@
     align-items: center;
 }
 
+.coin-name p:first-of-type {
+    font-weight: 600;
+}
+
 .coin-name img {
     height: 32px;
     width: auto;
