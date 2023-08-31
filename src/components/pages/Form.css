@@ -1,0 +1,131 @@
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+.register-form h1 {
+    font-size: 32px;
+    color: #eaecef;
+    font-weight: 600;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-box label {
+    font-size: 14px;
+    color: #eaecef;
+    font-weight: 400;
+}
+
+.input-box input {
+    width: 100%;
+    height: 45px;
+    background-color: #181a20;
+    outline: none;
+    border: 1px solid #484b54;
+    font-size: 14px;
+    padding: 0 12px;
+    border-radius: 4px;
+    color: #eaecef !important;
+
+
+
+    &:hover {
+        border: 1px solid #fcd535;
+        background-color: #181a20;
+    }
+
+    &:focus {
+        border: 1px solid #fcd535;
+        background-color: #181a20;
+    }
+
+    &:invalid {
+        border: 1px solid rgb(246, 70, 93);
+        background-color: #181a20;
+    }
+}
+
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #181a20 inset !important;
+    -webkit-text-fill-color: #eaecef !important;
+}
+
+.error {
+    color: rgb(246, 70, 93);
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.login-p {
+    font-size: 14px;
+    color: #848E9C;
+}
+
+.login-p span {
+    color: #fcd535;
+    font-weight: 500;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+@media (max-width: 768px) {
+    .register-form h1 {
+        font-size: 24px;
+        
+    }
+}
+
+.pass-box {
+    position: relative;
+}
+
+.fa-eye, .fa-eye-slash {
+    position: absolute;
+    color: #848E9C;
+    right: 15px;
+    top: 50%;
+    transform: translate(0, -50%);
+    cursor: pointer;
+}
+
+.or {
+    text-align: center;
+    color: #848E9C;
+    position: relative;
+    font-weight: 500;
+}
+
+.or::after, .or::before {
+    content: "";
+    position: absolute;
+    display: flex;
+    width: 40%;
+    height: 0.2px;
+    background-color: #848E9C;
+}
+
+.or::before {
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.or::after {
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}

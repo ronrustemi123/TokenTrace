@@ -1,0 +1,35 @@
+.sign-up {
+    height: calc(100vh - 8vh);
+    background-color: #181a20;
+    width: 100%;
+}
+
+.sign-nav-logo {
+    height: 64px;
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+}
+
+.sign-nav-logo img {
+    height: 24px;
+}
+
+.register-container {
+    height: 90%;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .register-container {
+        width: 93%;
+    }
+}
+
+
+

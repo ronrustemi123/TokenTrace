@@ -1,8 +1,8 @@
-import './ButtonYellow.css'
+import './NavButton.css'
 
-const ButtonYellow = (props) => {
+const NavButton = (props) => {
 
-    const buttonStyle = {
+    const navButtonStyle = {
         padding: props.padding,
         backgroundColor: '#fcd535',
         color: '#181a20',
@@ -17,8 +17,8 @@ const ButtonYellow = (props) => {
     }
 
     return ( 
-        <button  className='yellow-btn' style={buttonStyle}>{props.text}</button>
+        <button className='nav-btn' style={navButtonStyle}>{props.text}</button>
     );
 }
  
-export default ButtonYellow;
+export default NavButton;

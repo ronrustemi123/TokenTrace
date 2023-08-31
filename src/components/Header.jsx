@@ -6,7 +6,7 @@ import HeaderStats from './HeaderStats';
 const stats = [
     {
         text: '$38 billion',
-        desc: '24h trading volume on Binance exchange'
+        desc: '24h trading volume on Token Trace exchange'
     },
     {
         text: '350+',
@@ -30,7 +30,7 @@ const Header = () => {
                 <HeaderIllustrations/>
             </div>
             <div className="header-bottom">
-                {stats.map((el, index) => <HeaderStats text={el.text} desc={el.desc} key={index}/>)}
+                {stats.map(el => <HeaderStats text={el.text} desc={el.desc} key={el.desc}/>)}
             </div>
         </header>
     );

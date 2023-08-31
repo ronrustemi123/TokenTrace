@@ -1,0 +1,44 @@
+.help {
+    height: 65vh;
+    width: min(1200px, 93%);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.help-container {
+    display: flex;
+    height: 50%;
+    align-items: center;
+    gap: 30px;
+}
+
+@media(max-width: 1024px) {
+    .help {
+        height: 85vh;
+        margin-top: 50px;
+    }
+
+    .help-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height: 80%;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .help-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 0;
+        justify-content: center;
+    }
+
+    .help {
+        height: 100vh;
+    }
+}

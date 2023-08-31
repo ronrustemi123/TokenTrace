@@ -8,10 +8,25 @@
     position: relative;
 }
 
+.mobile-canvas {
+    background-color: #3f4246;
+    width: 67%;
+    height: 40px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px !important;
+}
+
 @media (max-width: 768px) {
     .nav {
         padding: 0 15px;
     }
+    .mobile-canvas {
+        width: 100%;
+    }
+    
 }
 
 .nav-logo img {
@@ -36,7 +51,7 @@
 
 .nav-menu {
     display: flex;
-    width: 350px;
+    width: 320px;
     height: 100%;
     align-items: center;
     justify-content: space-between;
@@ -56,6 +71,8 @@
 .icons i {
     cursor: pointer;
 }
+
+
 
 .icons i:hover {
     color: orange;
@@ -92,10 +109,11 @@
     display: flex;
     transition: all 0.2s ease-in-out 0s;
     z-index: 999;
+    display: none;
 }
 
 .canvas-items {
-    height: 200px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -132,5 +150,8 @@
         font-size: 30px;
         color: #eaecef;
         cursor: pointer;
+    }
+    .off-canvas {
+        display: flex;
     }
 }

@@ -1,5 +1,6 @@
 .popular-cryptos-container {
     height: 100vh;
+    position: relative;
 }
 
 .section-header {
@@ -24,6 +25,19 @@
     font-size: 24px;
     font-weight: 600;
     color: #eaecef;
+}
+
+.error-msg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: 600;
+    color: #848E9C;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 

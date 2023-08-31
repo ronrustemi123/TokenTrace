@@ -6,3 +6,9 @@
     text-decoration: none;
     color: #181a20;
 }
+
+@media (max-width: 768px) {
+    .yellow-btn {
+        width: 100% !important;
+    }
+}

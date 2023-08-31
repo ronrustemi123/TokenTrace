@@ -11,13 +11,7 @@
     }
 }
 
-.nav-link i {
-    position: absolute;
-    top: -2px;
-    right: -15px;
-    font-size: 13px;
-    color: #848E9C;
-}
+
 
 @media (max-width: 1000px) {
     .mobile-link {
@@ -25,8 +19,6 @@
         font-size: 18px;
     }
 
-    .mobile-link i {
-        font-size: 18px;
-    }
+
 }
 

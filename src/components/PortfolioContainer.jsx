@@ -19,7 +19,7 @@ const itemObj = [
     {
         icon: item1,
         title: 'Start trading',
-        desc: "You're good to go! Buy/sell crypto, set up recurring buys for your investments, and discover what Binance has to offer."
+        desc: "You're good to go! Buy/sell crypto, set up recurring buys for your investments, and discover what Token Trace has to offer."
     },
 ]
 
@@ -28,7 +28,7 @@ const itemObj = [
 const PortfolioContainer = () => {
     return (
         <div className="portfolio-container">
-            {itemObj.map((el, index) => <PortfolioItem title={el.title} desc={el.desc} icon={el.icon} key={index}/>)}
+            {itemObj.map(el => <PortfolioItem title={el.title} desc={el.desc} icon={el.icon} key={el.title}/>)}
         </div>
     );
 }

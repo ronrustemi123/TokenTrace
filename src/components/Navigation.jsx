@@ -4,6 +4,9 @@ import logoText from '../assets/logo.png'
 import NavLink from './NavLink'
 import ButtonYellow from './ButtonYellow'
 import { useState } from 'react'
+import NavButton from './NavButton'
+
+import { Link } from 'react-router-dom'
 
 
 const linkText = ['Buy Crypto', 'Markets', 'Finance', 'More'];
@@ -35,16 +38,26 @@ const Navigation = () => {
                 <i className="fa-solid fa-star mobile-hide"></i>
             </div>
 
-            <a href="/" className='log-in mobile-hide'>Log In</a>
-            <ButtonYellow text='Register' padding='8px 15px' size='14px' weight='400'/>
+            <Link style={{textDecoration: 'none'}} to='/login'>
+                <p className='log-in mobile-hide'>Log In</p>
+            </Link>
+           <Link to="/signup">
+                <NavButton text='Register' padding='8px 15px' size='14px' weight='400'/>
+           </Link>
 
-            {/* This is for mobile burger menu */}
+
+
             <i className="fa-solid fa-bars burger" onClick={handleClick}></i>
             <div className="off-canvas" style={{left: pos}}>
                 <i onClick={handleClick} className="fa-solid fa-xmark close"></i>
                 <div className="canvas-items">
-                    <ButtonYellow text='Register' padding='10px 100px' size='18px' weight='500'/>
-                    {linkText.map((el, i) => <NavLink text={el} key={i}/>)}
+                    <Link  to='/login' style={{textDecoration: 'none'}}>
+                        <p style={{textDecoration: 'none'}} className='log-in mobile-canvas'>Log In</p>
+                    </Link>
+                    <Link to='/signup' >
+                        <ButtonYellow text='Register' padding='10px 100px' size='18px' weight='500'/>
+                    </Link>
+                    {linkText.map(el => <NavLink text={el} key={el}/>)}
                 </div>
             </div>
         </nav>
