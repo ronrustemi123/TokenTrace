@@ -2,6 +2,9 @@ import React from 'react';
 import Coin from './Coin';
 import './Coins.css'
 
+import { Link } from 'react-router-dom';
+import CoinPage from './pages/CoinPage';
+import Navigation from './Navigation';
 
 
 const Coins = (props) => {
@@ -13,7 +16,13 @@ const Coins = (props) => {
                 <p>24h Change</p>
                 <p className='hide-mobile'>Market Cap</p>
             </div>
-            {props.coins.map(coins => <Coin coins={coins} key={coins.id}/>)}
+            {props.coins.map(coins => {
+                return (
+                    <Link to={`/coin/${coins.id}`} element={<><Navigation/><CoinPage/></>} style={{textDecoration: 'none'}} key={coins.id}>
+                        <Coin coins={coins} />
+                    </Link>
+                )
+            })}
         </div>
     );
 }

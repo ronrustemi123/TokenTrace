@@ -12,7 +12,7 @@ const indicators = () => (<div className="indicator"></div>);
 const AdSection = () => {
     return (
       <section className="ad-section">
-        <Slide pauseOnHover={false} indicators={indicators} transitionDuration={500} duration={5000} arrows={false} autoplay={true} infinite={true} canSwipe={true} className='slide'>
+        <Slide pauseOnHover={false} indicators={indicators} transitionDuration={300} duration={5000} arrows={false} autoplay={true} infinite={true} canSwipe={true} className='slide'>
           <div className="each-slide-effect">
             <img className='ad' src={ad1} alt="" />
           </div>

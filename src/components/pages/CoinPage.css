@@ -1,0 +1,41 @@
+.coin-page {
+    height: auto;
+    background-color: #181a20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coin-container {
+    width: min(1200px, 95%);
+    height: 90%;
+    display: flex;
+    margin-top: 60px;
+    gap: 40px;
+}
+
+.load-msg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: 600;
+    color: #848E9C;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+@media (max-width: 1024px) {
+    .coin-container {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .coin-container {
+        flex-direction: column;
+    }
+}

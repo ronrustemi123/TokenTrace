@@ -26,8 +26,10 @@ const Navigation = () => {
     return (
         <nav className="nav">
             <div className="nav-logo">
-                <img src={logoImg} alt="logo" />
-                <img src={logoText} alt="logoText" />
+                <Link to='/TokenTrace'>
+                    <img src={logoImg} alt="logo" />
+                    <img src={logoText} alt="logoText" />
+                </Link>
             </div>
             <ul className='nav-menu mobile-hide'>
                 {linkText.map((el, i) => <NavLink text={el} key={i}/>)}
@@ -35,7 +37,6 @@ const Navigation = () => {
 
             <div className="icons">
                 <i className="fa-solid fa-magnifying-glass"></i>
-                <i className="fa-solid fa-star mobile-hide"></i>
             </div>
 
             <Link style={{textDecoration: 'none'}} to='/login'>

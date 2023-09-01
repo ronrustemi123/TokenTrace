@@ -12,13 +12,18 @@ import Earn from './components/Earn';
 import Footer from './components/Footer';
 
 import {Routes, Route } from 'react-router-dom';
+
+
 import SignUp from './components/pages/SignUp';
 import LogIn from './components/pages/LogIn';
+import CoinPage from './components/pages/CoinPage';
 
 function App() {
   return (
       <div className="App">
+ 
       <Routes>
+        
         <Route exact path='/TokenTrace' element=
         {<>
           <Navigation />
@@ -35,6 +40,9 @@ function App() {
         </Route>
         <Route exact path='/signup' element={<SignUp />} /><Route />
         <Route exact path='/login' element={<LogIn/>} /><Route />
+        <Route path='/coin' element={<><Navigation/><CoinPage/></>}>
+          <Route path=':coinId' element={<CoinPage/>}/>
+        </Route>
       </Routes>
       <Footer />
       </div>
