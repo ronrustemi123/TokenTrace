@@ -27,7 +27,7 @@ const CoinPage = () => {
             toast.error("Can't load cryptos!")
             setError('flex')
         })
-    }, [])
+    }, [params.coinId])
 
     return (
         <section className="coin-page">
