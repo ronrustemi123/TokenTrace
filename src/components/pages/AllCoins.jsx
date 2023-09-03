@@ -1,4 +1,4 @@
-import './AllCoins'
+
 
 import AllCoinsHeader from '../AllCoinsHeader';
 import AllCoinMain from '../AllCoinMain';

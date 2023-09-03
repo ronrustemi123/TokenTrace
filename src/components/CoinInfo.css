@@ -141,27 +141,26 @@ th {
     font-size: 17px;
 }
 
-/* width */
+
 
 .about-coin-text::-webkit-scrollbar {
     width: 4px;
 }
 
-/* Track */
+
 
 .about-coin-text::-webkit-scrollbar-track {
     background: #181a20;
     border-radius: 5px;
 }
 
-/* Handle */
+
 
 .about-coin-text::-webkit-scrollbar-thumb {
     background: #0b0e11;
     border-radius: 5px;
 }
 
-/* Handle on hover */
 
 .about-coin-text::-webkit-scrollbar-thumb:hover {
     background: #555;

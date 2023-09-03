@@ -1,4 +1,4 @@
-import './ProtectContainer.css'
+
 
 import icon1 from '../assets/protect_icon1.png';
 import icon2 from '../assets/protect_icon2.png';
