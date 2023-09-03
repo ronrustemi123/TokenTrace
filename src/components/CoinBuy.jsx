@@ -12,7 +12,14 @@ const CoinBuy = ({coin}) => {
     const result = amount * (coin.market_data ? (coin.market_data.current_price.usd.toFixed(2)) : null)
 
 
-
+    const maxLengthCheck = (object) => {
+        if (object.target.value.length > object.target.maxLength) {
+          object.target.value = object.target.value.slice(
+            0,
+            object.target.maxLength
+          );
+        }
+      };
 
     return (
         <div className="coin-buy">
@@ -20,7 +27,7 @@ const CoinBuy = ({coin}) => {
                 <h2 className='buy-head'>Buy <span className='symbol-up'>{coin.symbol}</span></h2>
                 <div className="buy-input">
                     <p>Buy</p>
-                    <input value={amount} onChange={e => setAmount(e.target.value)}   type="number" name="" id="" placeholder='0.00'/>
+                    <input maxLength='8' onInput={e => maxLengthCheck(e)} value={amount} onChange={e => setAmount(e.target.value)}  type="number" name="" id="" placeholder='0.00'/>
                 </div>
                 <div className="buy-result">
                     <p>{amount} <span className='symbol-up'>{coin.symbol}</span> =</p>

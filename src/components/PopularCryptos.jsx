@@ -39,7 +39,9 @@ const PopularCryptos = () => {
         <div className="popular-cryptos-container">
           <div className="section-header">
             <SectionHeader text='Popular cryptocurrencies'/>
-            <SectionLink text='View more markets'/>
+            <Link style={{textDecoration: 'none'}} to='/coininfo'>
+              <SectionLink text='View more markets'/>
+            </Link>
           </div>
           <Coins coins={coins} />
           <h1 style={{display: error}} className="error-msg">Try Again Later! <LoaderIcon/></h1>

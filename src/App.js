@@ -17,6 +17,7 @@ import {Routes, Route } from 'react-router-dom';
 import SignUp from './components/pages/SignUp';
 import LogIn from './components/pages/LogIn';
 import CoinPage from './components/pages/CoinPage';
+import AllCoins from './components/pages/AllCoins';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
         <Route path='/coin' element={<><Navigation/><CoinPage/></>}>
           <Route path=':coinId' element={<CoinPage/>}/>
         </Route>
+        <Route exact path='/coininfo' element={<><Navigation/><AllCoins/></>}/>
       </Routes>
       <Footer />
       </div>

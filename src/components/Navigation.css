@@ -66,10 +66,30 @@
     font-size: 18px;
     align-items: center;
     color: #eaecef;
+    position: relative;
+}
+
+.search {
+    content: "";
+    position: absolute;
+    top: -8px;
+    right: -7px;
+    border-radius: 15px;
+    width: 200px;
+    height: 35px;
+    background-color: #101216;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    color: #eaecef;
+    font-weight: 500;
+    transition: all 0.1s ease;
+    transform-origin: 100% 0;
 }
 
 .icons i {
     cursor: pointer;
+    z-index: 99;
 }
 
 

@@ -16,7 +16,7 @@ const itemObj = [
     },
     {
         icon: icon2,
-        title: 'Grow your business with Binance Pay',
+        title: 'Grow your business with Token Pay',
         desc: 'Reach more customers as you pay and get paid in crypto with our borderless payment technology on Token Trace Pay & Token Trace Marketplace.'
     },
     {

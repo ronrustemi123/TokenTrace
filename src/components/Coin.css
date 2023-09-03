@@ -50,6 +50,11 @@
     padding-right: 20px;
 }
 
+.barlow {
+    font-weight: 500;
+    font-family: 'Barlow';
+}
+
 @media (max-width: 768px) {
     .hide-mobile {
         display: none;
