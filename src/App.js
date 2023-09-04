@@ -24,7 +24,7 @@ function App() {
  
       <Routes>
         
-        <Route exact path='/TokenTrace' element=
+        <Route exact path='/' element=
         {<>
           <Navigation />
           <Header />
