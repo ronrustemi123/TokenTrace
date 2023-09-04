@@ -99,6 +99,9 @@
 }
 
 @media (max-width: 768px) {
+    .all-coin-main {
+        height: 126vh;
+    }
 
     .all-coin-main-tab-head{
         font-size: 18px;
