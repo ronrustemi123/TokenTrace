@@ -36,7 +36,7 @@ const Navigation = () => {
     return (
         <nav className="nav">
             <div className="nav-logo">
-                <Link to='/TokenTrace'>
+                <Link to='/'>
                     <img src={logoImg} alt="logo" />
                     <img src={logoText} alt="logoText" />
                 </Link>

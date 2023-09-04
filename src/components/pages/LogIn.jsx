@@ -9,7 +9,7 @@ const LogIn = () => {
     return (
         <div className="sign-up">
           <nav className="sign-nav-logo">
-            <Link style={{textDecoration: 'none'}} to='/TokenTrace'>
+            <Link style={{textDecoration: 'none'}} to='/'>
                 <img src={logoImg} alt="sign-logo" />
                 <img src={logoText} alt="sign-logoText" />
             </Link>

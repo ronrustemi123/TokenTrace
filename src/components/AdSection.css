@@ -8,6 +8,7 @@
     height: 55vh;
     padding: 50px 0;
     border-radius: 24px 24px 0 0;
+    display: block !important;
 }
 
 .ad {
