@@ -9,7 +9,6 @@ const AllCoinCrypto = ({coins}) => {
     const [color, setColor] = useState('');
     const [plus, setPlus] = useState('');
 
-
     const [fill, setFill] = useState('regular');
 
     const handleFavClick = (e) => {
