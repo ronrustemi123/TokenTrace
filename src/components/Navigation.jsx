@@ -15,15 +15,7 @@ const Navigation = () => {
 
     const [pos, setPos] = useState('-500vw');
 
-    const [scale, setScale] = useState(0)
 
-    const handleScale = () => {
-        if(scale === 0) {
-            setScale(1)
-        }else {
-            setScale(0)
-        }
-    }
 
     const handleClick = () => {
         if(pos === '0') {
@@ -46,8 +38,7 @@ const Navigation = () => {
             </ul>
 
             <div className="icons">
-                <input placeholder='Search Coin' style={{transform: `scaleX(${scale})`}} className='search' type="text" name="" id="" />
-                <i onClick={handleScale} className="fa-solid fa-magnifying-glass"></i>
+                <i className="fa-solid fa-magnifying-glass"></i>
             </div>
 
             <Link style={{textDecoration: 'none'}} to='/login'>
