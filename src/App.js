@@ -1,6 +1,6 @@
 import Navigation from './components/Navigation';
 import Header from './components/Header';
-import AdSection from './components/AdSection';
+import BannerSection from './components/BannerSection';
 import Main from './components/Main';
 import PopularCryptos from './components/PopularCryptos';
 import Portfolio from './components/Portfolio';
@@ -29,7 +29,7 @@ function App() {
           <Navigation />
           <Header />
           <Main> 
-            <AdSection />
+            <BannerSection />
             <PopularCryptos />
             <Portfolio /><Explore />
             <Protect /> 

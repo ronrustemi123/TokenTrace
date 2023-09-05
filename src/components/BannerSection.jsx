@@ -1,4 +1,4 @@
-import './AdSection.css'
+import './BannerSection.css'
 
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
@@ -9,7 +9,7 @@ const indicators = () => (<div className="indicator"></div>);
 
 
 
-const AdSection = () => {
+const BannerSection = () => {
     return (
       <section className="ad-section">
         <Slide pauseOnHover={false} indicators={indicators} transitionDuration={300} duration={5000} arrows={false} autoplay={true} infinite={true} canSwipe={true} className='slide'>
@@ -27,4 +27,4 @@ const AdSection = () => {
     );
 }
  
-export default AdSection;
+export default BannerSection;
