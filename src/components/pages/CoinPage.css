@@ -37,5 +37,6 @@
 @media (max-width: 768px) {
     .coin-container {
         flex-direction: column;
+        padding: 0 5px;
     }
 }

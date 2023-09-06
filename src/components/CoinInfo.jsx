@@ -18,12 +18,12 @@ const CoinInfo = ({coin}) => {
             setOverflow('visible');
             setDisplay('none');
             setHeight('auto');
-            setPos('-18px')
+            setPos('-15px')
             setText('Less')
         }else {
             setOverflow('hidden');
             setDisplay('block');
-            setHeight('30%');
+            setHeight('50vh');
             setPos('0');
             setText('More')
         }

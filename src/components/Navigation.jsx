@@ -19,7 +19,7 @@ const Navigation = () => {
 
     const handleClick = () => {
         if(pos === '0') {
-            setPos('-500vw')
+            setPos('-100vw')
         }else {
             setPos('0')
         }
@@ -45,7 +45,7 @@ const Navigation = () => {
                 <p className='log-in mobile-hide'>Log In</p>
             </Link>
            <Link to="/signup">
-                <NavButton text='Register' padding='8px 15px' size='14px' weight='400'/>
+                <NavButton text='Register' padding='8px 12px' size='14px' weight='400'/>
            </Link>
 
 

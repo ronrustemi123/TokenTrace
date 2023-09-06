@@ -143,28 +143,10 @@ th {
 
 
 
-.about-coin-text::-webkit-scrollbar {
-    width: 4px;
-}
 
 
 
-.about-coin-text::-webkit-scrollbar-track {
-    background: #181a20;
-    border-radius: 5px;
-}
 
-
-
-.about-coin-text::-webkit-scrollbar-thumb {
-    background: #0b0e11;
-    border-radius: 5px;
-}
-
-
-.about-coin-text::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
 
 @media (max-width: 1024px) {
     .coin-other-data {
@@ -199,7 +181,6 @@ th {
     .coin-heading-info {
         margin-top: 20px;
     }
-
 }
 
 @media (max-width: 342px) {
