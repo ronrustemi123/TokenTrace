@@ -1,7 +1,7 @@
 import './PortfolioContainer.css'
 import PortfolioItem from './PortfolioItem';
 
-import item1 from '../assets/portfolio_icon1.png';
+import item1 from '../assets/portfolio_icon1.webp';
 import item2 from '../assets/portfolio_icon2.png';
 import item3 from '../assets/portfolio_icon3.png';
 

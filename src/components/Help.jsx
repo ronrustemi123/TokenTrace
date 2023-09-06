@@ -1,9 +1,9 @@
 import './Help.css'
 import SectionHeader from './SectionHeader';
 
-import icon1 from '../assets/help_icon1.png';
-import icon2 from '../assets/help_icon2.png';
-import icon3 from '../assets/help_icon3.png';
+import icon1 from '../assets/help_icon1.webp';
+import icon2 from '../assets/help_icon2.webp';
+import icon3 from '../assets/help_icon3.webp';
 import HelpItem from './HelpItem';
 
 

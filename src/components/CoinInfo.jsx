@@ -70,16 +70,15 @@ const CoinInfo = ({coin}) => {
                 </div>
                 <div className="right-data">
                     {coin.market_data ? <h2>Market Cap <p>${coin.market_data.market_cap.usd.toLocaleString()}</p></h2> : null}
-                    {coin.market_data ? <h2>Circulating Supply <p>{coin.market_data.circulating_supply.toFixed()}</p></h2> : null}
+                    {coin.market_data ? <h2>Circulating Supply <p>{coin.market_data.circulating_supply.toLocaleString()}</p></h2> : null}
                 </div>
             </div>
             <h2 className='about-coin-head'>About {coin.name}</h2>
             <div style={{overflow: overflow, height: height}} className="about-coin">
                 
                 <p className='about-coin-text' dangerouslySetInnerHTML={{
-                    __html: DOMPurify.sanitize(coin.description ? coin.description.en: ''),
+                    __html: DOMPurify.sanitize(coin.description && coin.description.en !== '' ? coin.description.en: 'No Description Found!'),
                 }}>
-                
                 </p>
                 <div style={{display: display}} className="text-hide">
                     

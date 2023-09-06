@@ -3,7 +3,7 @@ import './BannerSection.css'
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 
-import ad1 from '../assets/ad1.png';
+import ad1 from '../assets/ad1.webp';
 
 const indicators = () => (<div className="indicator"></div>);
 

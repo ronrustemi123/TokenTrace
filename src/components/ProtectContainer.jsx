@@ -1,8 +1,8 @@
 
 
-import icon1 from '../assets/protect_icon1.png';
-import icon2 from '../assets/protect_icon2.png';
-import icon3 from '../assets/protect_icon3.png';
+import icon1 from '../assets/protect_icon1.webp';
+import icon2 from '../assets/protect_icon2.webp';
+import icon3 from '../assets/protect_icon3.webp';
 import ProtectItem from './ProtectItem';
 
 const itemObj = [

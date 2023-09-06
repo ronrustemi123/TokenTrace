@@ -35,7 +35,7 @@ const PopularCryptos = () => {
 
     return (
       <>
-        <ToastContainer/>
+        <ToastContainer autoClose={2500} hideProgressBar={true} theme='dark' pauseOnHover={false}/>
         <div className="popular-cryptos-container">
           <div className="section-header">
             <SectionHeader text='Popular cryptocurrencies'/>

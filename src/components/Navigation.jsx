@@ -1,6 +1,6 @@
 import './Navigation.css'
-import logoImg from '../assets/logo-img.png'
-import logoText from '../assets/logo.png'
+import logoImg from '../assets/logo-img.webp'
+import logoText from '../assets/logo.webp'
 import NavLink from './NavLink'
 import ButtonYellow from './ButtonYellow'
 import { useState } from 'react'
@@ -29,8 +29,8 @@ const Navigation = () => {
         <nav className="nav">
             <div className="nav-logo">
                 <Link to='/'>
-                    <img src={logoImg} alt="logo" />
-                    <img src={logoText} alt="logoText" />
+                    <img height={24} src={logoImg} alt="logo" />
+                    <img height={24} src={logoText} alt="logoText" />
                 </Link>
             </div>
             <ul className='nav-menu mobile-hide'>

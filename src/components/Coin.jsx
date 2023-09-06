@@ -20,7 +20,7 @@ const Coin = (props) => {
     return (
         <div className="coin-item col">
             <div className="coin-name">
-                <img src={props.coins.image} alt="" />
+                <img height={32} width={32} src={props.coins.image} alt="" />
                 <p>{props.coins.name}</p>
                 <p className='symbol'>{props.coins.symbol.toUpperCase()}</p>
             </div>

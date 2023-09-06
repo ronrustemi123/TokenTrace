@@ -51,7 +51,7 @@ const AllCoinMain = () => {
 
     return (
         <main className="all-coin-main">
-             <ToastContainer/>
+             <ToastContainer autoClose={2500} hideProgressBar={true} theme='dark' pauseOnHover={false}/>
             <div className="all-coin-main-container">
                 
                 <div className="all-coin-main-tab">

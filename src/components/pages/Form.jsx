@@ -54,7 +54,7 @@ const Form = (props) => {
     
 
     return (
-        <form className="register-form" action="/TokenTrace" method="get">
+        <div className="register-form">
             <h1>Welcome {props.welcome}</h1>
             <div className="input-box">
                 <label htmlFor="emailAddress">Email</label>
@@ -77,7 +77,7 @@ const Form = (props) => {
             <Link style={{textDecoration: 'none'}} to='/signup'>
                 <p style={{display: props.signup}}  className="login-p">Don't havn an account? <span>Sign Up</span></p>
             </Link>
-        </form>
+        </div>
     );
 }
  
