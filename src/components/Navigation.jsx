@@ -13,7 +13,7 @@ const linkText = ['Buy Crypto', 'Markets', 'Finance', 'More'];
 
 const Navigation = () => {
 
-    const [pos, setPos] = useState('-500vw');
+    const [pos, setPos] = useState('-100vw');
 
 
 

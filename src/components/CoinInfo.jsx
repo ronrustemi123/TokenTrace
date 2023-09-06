@@ -9,7 +9,7 @@ const CoinInfo = ({coin}) => {
 
     const [overflow, setOverflow] = useState('hidden')
     const [display, setDisplay] = useState('block')
-    const [height, setHeight] = useState('30%')
+    const [height, setHeight] = useState('50vh')
     const [pos, setPos] = useState('0')
     const [text, setText] = useState('More')
 
