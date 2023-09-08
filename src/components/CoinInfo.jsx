@@ -10,7 +10,7 @@ const CoinInfo = ({coin}) => {
     const [overflow, setOverflow] = useState('hidden')
     const [display, setDisplay] = useState('block')
     const [height, setHeight] = useState('50vh')
-    const [pos, setPos] = useState('0')
+    const [pos, setPos] = useState('3px')
     const [text, setText] = useState('More')
 
     const handleClick = () => {
@@ -18,13 +18,13 @@ const CoinInfo = ({coin}) => {
             setOverflow('visible');
             setDisplay('none');
             setHeight('auto');
-            setPos('-15px')
+            setPos('-28px')
             setText('Less')
         }else {
             setOverflow('hidden');
             setDisplay('block');
             setHeight('50vh');
-            setPos('0');
+            setPos('3px');
             setText('More')
         }
     }

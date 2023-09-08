@@ -102,6 +102,7 @@ th {
     margin-top: 30px;
     padding: 0 5px;
     position: relative;
+    margin-bottom: 35px;
 }
 
 .about-coin-head {
@@ -138,7 +139,7 @@ th {
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 0);
-    font-size: 17px;
+    font-size: 18px;
 }
 
 
