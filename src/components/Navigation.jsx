@@ -55,7 +55,7 @@ const Navigation = () => {
                 <i onClick={handleClick} className="fa-solid fa-xmark close"></i>
                 <div className="canvas-items">
                     <Link  to='/login' style={{textDecoration: 'none'}}>
-                        <p style={{textDecoration: 'none'}} className='log-in mobile-canvas'>Log In</p>
+                        <p className='log-in mobile-canvas'>Log In</p>
                     </Link>
                     <Link to='/signup' >
                         <ButtonYellow text='Register' padding='10px 100px' size='18px' weight='500'/>

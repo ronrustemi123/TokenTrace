@@ -111,7 +111,7 @@
     align-items: center;
     justify-content: space-evenly;
     display: flex;
-    transition: all 0.4s linear;
+    transition: all 0.31s linear;
     z-index: 999;
     display: none;
 }
