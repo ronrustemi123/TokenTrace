@@ -1,6 +1,7 @@
 .all-coin-main {
-    height: 110vh;
+    height: 115vh;
     background-color: #181a20;
+    overflow: hidden;
 }
 
 .all-coin-main-container {
@@ -14,13 +15,34 @@
     display: flex;
     width: 100%;
     height: 100px;
-    align-items: center;
     gap: 30px;
     color: #848E9C;
     font-size: 14px;
     font-weight: 500;
     user-select: none;
-    margin-top: 10px;
+    margin-top: 40px;
+    flex-direction: column;
+
+}
+
+.head-sub-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-sub-div input {
+    border: 1px solid #494e54;
+    outline: none;
+    background-color: transparent;
+    padding: 12px 10px;
+    width: 300px;
+    color: #eaecef;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.head-sub-div input:focus {
+    border-color: #fcd535;
 }
 
 .all-coin-main-tab-head {
@@ -36,7 +58,6 @@
 .all-coin-main-cryptos {
     display: flex;
     flex-direction: column;
-    
 }
 
 .all-coin-main-cryptos-head {
@@ -48,7 +69,7 @@
     font-size: 12px;
     padding: 0 10px;
     background-color: #0B0E11;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .all-coin-main-cryptos-head p:first-child {
     width: 420px;
@@ -107,6 +128,14 @@
         font-size: 18px;
         line-height: 1.4em;
     }
+    .all-coin-main-cryptos-head {
+        margin-top: 40px;
+    }
+
+    .head-sub-div input {
+        font-size: 14px;
+        width: 250px;
+    }
 
     .all-coin-hide-mobile {
         display: none;
@@ -117,6 +146,7 @@
     .all-coin-main-cryptos-head p:first-child {
         width: 500px;
     }
+   
     
 
 }

@@ -50,9 +50,6 @@ const Form = (props) => {
         }
     }
 
-    
-    
-
     return (
         <div className="register-form">
             <h1>Welcome {props.welcome}</h1>
