@@ -43,7 +43,7 @@
 }
 
 @media (max-width: 768px) {
-    .ad {
+    .banner {
         object-fit: contain;
         height: 100%;
     }
