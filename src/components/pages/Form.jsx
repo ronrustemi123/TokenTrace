@@ -72,7 +72,7 @@ const Form = (props) => {
                 <p style={{display: props.login}} className="login-p">Already have an account? <span>Log In</span></p>
             </Link>
             <Link style={{textDecoration: 'none'}} to='/signup'>
-                <p style={{display: props.signup}}  className="login-p">Don't havn an account? <span>Sign Up</span></p>
+                <p style={{display: props.signup}}  className="login-p">Don't have an account? <span>Sign Up</span></p>
             </Link>
         </div>
     );

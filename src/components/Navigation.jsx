@@ -53,7 +53,7 @@ const Navigation = () => {
             <i className="fa-solid fa-bars burger" onClick={handleClick}></i>
             <div className="off-canvas" style={{left: pos}}>
                 <i onClick={handleClick} className="fa-solid fa-xmark close"></i>
-                <div className="canvas-items">
+                <ul className="canvas-items">
                     <Link  to='/login' style={{textDecoration: 'none'}}>
                         <p className='log-in mobile-canvas'>Log In</p>
                     </Link>
@@ -61,7 +61,7 @@ const Navigation = () => {
                         <ButtonYellow text='Register' padding='10px 100px' size='18px' weight='500'/>
                     </Link>
                     {linkText.map(el => <NavLink text={el} key={el}/>)}
-                </div>
+                </ul>
             </div>
         </nav>
     );

@@ -3,7 +3,7 @@
 }
 
 .all-coins-header-container {
-    width: min(1200px, 95%);
+    width: min(1200px, 94%);
     margin: 0 auto;
     height: 95%;
     padding: 20px 0;
@@ -65,5 +65,10 @@
 
     .all-coins-header-container p {
         font-size: 13px;
+    }
+    .header-par h2 {
+        width: 100%;
+        font-size: 18px;
+        margin-top: 10px;
     }
 }

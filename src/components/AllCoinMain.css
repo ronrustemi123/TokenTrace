@@ -5,7 +5,7 @@
 }
 
 .all-coin-main-container {
-    width: min(1200px, 95%);
+    width: min(1200px, 93%);
     height: 100%;
     margin: 0 auto;
     position: relative;
@@ -121,7 +121,7 @@
 
 @media (max-width: 768px) {
     .all-coin-main {
-        height: 126vh;
+        height: 133vh;
     }
 
     .all-coin-main-tab-head{

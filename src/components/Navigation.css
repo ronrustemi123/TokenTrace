@@ -122,6 +122,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: calc(100% - 50px);
+    list-style: none;
 }
 
 @media (max-width: 1000px) {
