@@ -34,7 +34,7 @@ const AllCoinCrypto = ({coins}) => {
     return (
         <div className="all-coin-crypto">
             <div className="all-coin-crypto-name">
-                <img className='coin-icon' src={coins.image} alt="coin_icon" />
+                <img height={32} className='coin-icon' src={coins.image} alt="coin_icon" />
                 <div className='name-mobile-div'>
                     <h2 className='coin-symbol'>{coins.symbol}</h2>
                     <p>{coins.name}</p>

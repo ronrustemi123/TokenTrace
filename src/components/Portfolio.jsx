@@ -27,7 +27,7 @@ const Portfolio = () => {
           </Link>
         </div>
         <div className="right-portfolio hide-mobile">
-          <img loading="lazy" className="port-img" src={portfolio_img} alt="" />
+          <img width={350} height={680} loading="lazy" className="port-img" src={portfolio_img} alt="" />
         </div>
       </section>
     );
