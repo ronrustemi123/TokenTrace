@@ -17,7 +17,7 @@ const ButtonYellow = (props) => {
     }
 
     return ( 
-        <button onClick={props.func} type='submit' className='yellow-btn' style={buttonStyle}>{props.text}</button>
+        <button onClick={(e) => {props.err1(e) ; props.err2(e)}} type='submit' className='yellow-btn' style={buttonStyle}>{props.text}</button>
     );
 }
  

@@ -29,6 +29,7 @@ const Form = (props) => {
     const [pass, setPass] = useState('');
     const [display, setDisplay] = useState('')
     const [displayFields, setDisplayFields] = useState('none')
+    const [displayEmailErr, setDisplayEmailErr] = useState('none')
 
     const [visibility, setVisibility] = useState('password')
     const [iconStyle, setIconStyle] = useState('fa-solid fa-eye')
@@ -52,7 +53,6 @@ const Form = (props) => {
     }
 
     const showErr = (e) => {
-        
         if(props.isRegister === 'flex') {
             if(email.length === 0 || pass.length < 8) {
                 setDisplayFields('block')
@@ -67,6 +67,18 @@ const Form = (props) => {
             }else {
                 setDisplayFields('none')
             }
+        }
+    }
+
+    const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+    const isValidEmail = emailRegex.test(email)
+
+    const showEmailErr = (e) => {
+        if(isValidEmail || email.length === 0) {
+            setDisplayEmailErr('none')
+        }else {
+            setDisplayEmailErr('block')
+            e.preventDefault()
         }
     }
 
@@ -85,11 +97,12 @@ const Form = (props) => {
                         <i onClick={showPass} className={iconStyle}></i>
                     </div>
                 </div>
+                <p style={{display: displayEmailErr}} className="error">Enter a valid email address!</p>
                 <p style={{display: display}} className="error">Password must be 8 or more characters long!</p>
                 <p style={{display: displayFields}} className="error">Complete the fields!</p>
             </div>
 
-            <ButtonYellow func={e => showErr(e)} size='17px' padding='13px 0' weight='500' width='100%' text={props.text}/>
+            <ButtonYellow err1={e => showErr(e)} err2={e => showEmailErr(e)} size='17px' padding='13px 0' weight='500' width='100%' text={props.text}/>
             <p className="or">or</p>
             {headerBtnContent.map(el => <HeaderFormBtn text={el.text} icon={el.icon} key={el.key}/>)}
             <Link style={{textDecoration: 'none'}} to='/login'>
