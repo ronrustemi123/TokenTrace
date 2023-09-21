@@ -28,6 +28,7 @@ const Form = (props) => {
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
     const [display, setDisplay] = useState('')
+    const [displayFields, setDisplayFields] = useState('none')
 
     const [visibility, setVisibility] = useState('password')
     const [iconStyle, setIconStyle] = useState('fa-solid fa-eye')
@@ -50,22 +51,45 @@ const Form = (props) => {
         }
     }
 
+    const showErr = (e) => {
+        
+        if(props.isRegister === 'flex') {
+            if(email.length === 0 || pass.length < 8) {
+                setDisplayFields('block')
+                e.preventDefault()
+            }else {
+                setDisplayFields('none')
+            }
+        }else {
+            if(email.length === 0){
+                setDisplayFields('block')
+                e.preventDefault()
+            }else {
+                setDisplayFields('none')
+            }
+        }
+    }
+
     return (
-        <div className="register-form">
+        <form method="get" action="/" className="register-form">
             <h1>Welcome {props.welcome}</h1>
-            <div className="input-box">
-                <label htmlFor="emailAddress">Email</label>
-                <input maxLength={50} value={email} type="email" id="emailAddress" onChange={e => setEmail(e.target.value)}/>
-            </div>
-            <div className="input-box" style={{display: props.isRegister}}>
-                <label htmlFor="passw">Password</label>
-                <div className="pass-box">
-                    <input maxLength={50} value={pass} type={visibility} id="passw" onChange={e => setPass(e.target.value)}/>
-                    <i onClick={showPass} className={iconStyle}></i>
+            <div className="input-container">
+                <div className="input-box">
+                    <label htmlFor="emailAddress">Email</label>
+                    <input maxLength={50} value={email} type="email" id="emailAddress" onChange={e => setEmail(e.target.value)}/>
+                </div>
+                <div className="input-box" style={{display: props.isRegister}}>
+                    <label htmlFor="passw">Password</label>
+                    <div className="pass-box">
+                        <input maxLength={50} value={pass} type={visibility} id="passw" onChange={e => setPass(e.target.value)}/>
+                        <i onClick={showPass} className={iconStyle}></i>
+                    </div>
                 </div>
                 <p style={{display: display}} className="error">Password must be 8 or more characters long!</p>
+                <p style={{display: displayFields}} className="error">Complete the fields!</p>
             </div>
-            <ButtonYellow size='17px' padding='13px 0' weight='500' width='100%' text={props.text}/>
+
+            <ButtonYellow func={e => showErr(e)} size='17px' padding='13px 0' weight='500' width='100%' text={props.text}/>
             <p className="or">or</p>
             {headerBtnContent.map(el => <HeaderFormBtn text={el.text} icon={el.icon} key={el.key}/>)}
             <Link style={{textDecoration: 'none'}} to='/login'>
@@ -74,7 +98,7 @@ const Form = (props) => {
             <Link style={{textDecoration: 'none'}} to='/signup'>
                 <p style={{display: props.signup}}  className="login-p">Don't have an account? <span>Sign Up</span></p>
             </Link>
-        </div>
+        </form>
     );
 }
  

@@ -17,7 +17,7 @@ const ButtonYellow = (props) => {
     }
 
     return ( 
-        <button  className='yellow-btn' style={buttonStyle}>{props.text}</button>
+        <button onClick={props.func} type='submit' className='yellow-btn' style={buttonStyle}>{props.text}</button>
     );
 }
  
