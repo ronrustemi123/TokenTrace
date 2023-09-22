@@ -19,7 +19,7 @@ const HeaderForm = () => {
     return (
         <div className="header-form">
             <h1 className='header-form-title'>
-                <div>150M+ Users Chose Us</div>
+                <div><span style={{color: '#F0B90B'}}>150M+</span> Users Chose Us</div>
                 <div>Find Out Why Today</div>
             </h1>
             <a href="/" className='header-link'><i className="fa-solid fa-gift"></i>Trade Bitcoin for free <i className="fa-solid fa-arrow-right"></i></a>
