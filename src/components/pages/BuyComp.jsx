@@ -22,9 +22,19 @@ const BuyComp = () => {
     }, [])
 
     useEffect(() => {
-        if(value !== '') {
-            getPrice()
+        const getPrice = async () => {
+            try {
+                const resp = await fetch(`https://api.coingecko.com/api/v3/coins/${value}`);
+                const data = await resp.json();
+                setPrice(data)
+            }catch(err) {
+                console.error(err)
+                toast.error("Can't get crypto data!")
+            }
         }
+
+        getPrice()
+        
     }, [value])
 
     const getData = async () => {
@@ -38,16 +48,7 @@ const BuyComp = () => {
         }
     }
 
-    const getPrice = async () => {
-        try {
-            const resp = await fetch(`https://api.coingecko.com/api/v3/coins/${value}`);
-            const data = await resp.json();
-            setPrice(data)
-        }catch(err) {
-            console.error(err)
-            toast.error("Can't get crypto data!")
-        }
-    }
+  
 
     const maxLengthCheck = (object) => {
         if (object.target.value.length > object.target.maxLength) {
