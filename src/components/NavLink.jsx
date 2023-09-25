@@ -2,7 +2,7 @@ import './NavLink.css'
 
 const NavLink = (props) => {
     return (
-        <li className="nav-link mobile-link">{props.text}</li>
+        <li onClick={props.func} className="nav-link mobile-link">{props.text}</li>
     );
 }
  

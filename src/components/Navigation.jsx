@@ -48,6 +48,10 @@ const Navigation = () => {
         }
     }
 
+    const handleLinkClick = () => {
+        setPos('-100vw')
+    }
+
     return (
         <nav className="nav">
             <div className="nav-logo">
@@ -92,7 +96,7 @@ const Navigation = () => {
                     {linkText.map(el => {
                         return (
                             <Link style={{textDecoration: 'none'}} to={`/${el.path}`} key={el.id}>
-                                <NavLink text={el.text}/>
+                                <NavLink func={handleLinkClick} text={el.text}/>
                             </Link>
                         )
                     })}
