@@ -46,28 +46,12 @@
     margin-bottom: 30px;
 }
 
+
+
 #combo-box-demo {
     color: #EAECEF !important;
 }
 
-#combo-box-demo-label {
-    color: #EAECEF !important;
-}
-
-.css-154xyx0-MuiInputBase-root-MuiOutlinedInput-root {
-    border: 1px solid #494e54;
-    margin: 0 0 50px;
-    appearance: none !important;
-    outline: none !important;
-}
-
-.css-i4bv87-MuiSvgIcon-root {
-    color: #494e54;
-}
-
-.css-ptiqhd-MuiSvgIcon-root {
-    color: #494e54 !important;
-}
 
 
 @media (max-width: 900px) {

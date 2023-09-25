@@ -73,7 +73,8 @@ const BuyComp = () => {
                 id="combo-box-demo"
                 options={coin.map(el => el.id)}
                 onSelect={e => setValue(e.target.value)}
-                renderInput={(params) => <TextField {...params}  placeholder='Bitcoin'/>}
+                sx={{border: '1px solid #494e54', outline: 'none', marginBottom: '30px', borderRadius: '4px'}}
+                renderInput={(params) => <TextField {...params} placeholder='Bitcoin'/>}
             />
             <div style={{marginBottom: '10px'}} className="buy-input">
                 <p>Buy</p>
