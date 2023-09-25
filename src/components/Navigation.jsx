@@ -9,7 +9,30 @@ import NavButton from './NavButton'
 import { Link } from 'react-router-dom'
 
 
-const linkText = ['Buy Crypto', 'Markets', 'Finance', 'More'];
+
+
+const linkText = [
+    {
+        text: 'Buy Crypto',
+        path: 'buy',
+        id: 'link1'
+    },
+    {
+        text: 'Markets',
+        path: 'coininfo',
+        id: 'link2'
+    },
+    {
+        text: 'Finance',
+        path: 'finance',
+        id: 'link3'
+    }, 
+    {
+        text: 'More',
+        path: 'more',
+        id: 'link4'
+    }
+]
 
 const Navigation = () => {
 
@@ -34,7 +57,13 @@ const Navigation = () => {
                 </Link>
             </div>
             <ul className='nav-menu mobile-hide'>
-                {linkText.map((el, i) => <NavLink text={el} key={i}/>)}
+                {linkText.map(el => {
+                    return (
+                        <Link style={{textDecoration: 'none'}} to={`/${el.path}`} key={el.id}>
+                            <NavLink text={el.text}/>
+                        </Link>
+                    )
+                })}
             </ul>
 
             <div className="icons">
@@ -60,7 +89,13 @@ const Navigation = () => {
                     <Link to='/signup' >
                         <ButtonYellow text='Register' padding='10px 100px' size='18px' weight='500'/>
                     </Link>
-                    {linkText.map(el => <NavLink text={el} key={el}/>)}
+                    {linkText.map(el => {
+                        return (
+                            <Link style={{textDecoration: 'none'}} to={`/${el.path}`} key={el.id}>
+                                <NavLink text={el.text}/>
+                            </Link>
+                        )
+                    })}
                 </ul>
             </div>
         </nav>

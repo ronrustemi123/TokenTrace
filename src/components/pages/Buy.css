@@ -1,0 +1,98 @@
+.buy-sec {
+    height: calc(92vh - 64px);
+    background-color: #181A20;
+}
+
+.buy-container {
+    width: min(1200px, 93%);
+    margin: 0 auto;
+    display: flex;
+    height: 100%;
+}
+
+.buy-desc {
+    width: 50%;
+    padding: 0 100px;
+}
+
+.buy-desc h1 {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 600;
+    color: #EAECEF;
+    margin-top: 86px;
+}   
+
+.buy-desc h3 {
+    margin-top: 24px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #B7BDC6;
+}
+
+.buy-buypage {
+    flex-grow: 1;
+    padding: 0 70px;
+}
+
+.buypage-header {
+    color: #EAECEF;
+    font-size: 32px;
+    font-weight: 500;
+    border-bottom: 4px solid rgb(240, 185, 11);
+    padding: 10px 0;
+    margin-top: 86px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+#combo-box-demo {
+    color: #EAECEF !important;
+}
+
+#combo-box-demo-label {
+    color: #EAECEF !important;
+}
+
+.css-154xyx0-MuiInputBase-root-MuiOutlinedInput-root {
+    border: 1px solid #494e54;
+    margin: 0 0 50px;
+    appearance: none !important;
+    outline: none !important;
+}
+
+.css-i4bv87-MuiSvgIcon-root {
+    color: #494e54;
+}
+
+.css-ptiqhd-MuiSvgIcon-root {
+    color: #494e54 !important;
+}
+
+
+@media (max-width: 900px) {
+    .buy-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .buy-sec {
+        height: 110dvh;
+    }
+    .buy-desc {
+        padding: 0;
+        width: 100%;
+    }
+    .buy-buypage {
+        padding: 0;
+        width: 100%;
+    }
+    .buy-desc h1 {
+        font-size: 32px;
+    }
+    .buy-desc h3 {
+        font-size: 18px;
+    }
+    .buypage-header {
+        font-size: 22px;
+    }
+}

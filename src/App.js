@@ -17,6 +17,8 @@ import SignUp from './components/pages/SignUp';
 import LogIn from './components/pages/LogIn';
 import CoinPage from './components/pages/CoinPage';
 import AllCoins from './components/pages/AllCoins';
+import Buy from './components/pages/Buy';
+import ErrorPage from './components/pages/ErrorPage';
 
 function App() {
   return (
@@ -44,6 +46,9 @@ function App() {
           <Route path=':coinId' element={<CoinPage/>}/>
         </Route>
         <Route exact path='/coininfo' element={<><Navigation/><AllCoins/></>}/>
+        <Route exact path='/buy' element={<><Navigation/><Buy/></>}/>
+        <Route exact path='/finance' element={<><Navigation/><ErrorPage/></>}/>
+        <Route exact path='/more' element={<><Navigation/><ErrorPage/></>}/>
       </Routes>
       <Footer />
       </div>

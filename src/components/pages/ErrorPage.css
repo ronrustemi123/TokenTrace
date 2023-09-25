@@ -1,0 +1,21 @@
+.error-page {
+    height: calc(92vh - 64px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #181a20;
+}
+
+.error-page h1 {
+    font-size: 60px;
+    font-weight: 500;
+    color: #eaecef;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .error-page h1 {
+        font-size: 42px;
+    }
+}

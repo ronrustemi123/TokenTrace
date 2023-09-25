@@ -16,8 +16,15 @@ const ButtonYellow = (props) => {
         width: props.width
     }
 
+    const handleClick = (e) => {
+        if(props.err1 && props.err2) {
+            props.err1(e);
+            props.err2(e)
+        }
+    }
+
     return ( 
-        <button onClick={(e) => {props.err1(e) ; props.err2(e)}} type='submit' className='yellow-btn' style={buttonStyle}>{props.text}</button>
+        <button onClick={(e) => handleClick(e)} type='submit' className='yellow-btn' style={buttonStyle}>{props.text}</button>
     );
 }
  
