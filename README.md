@@ -7,6 +7,8 @@
 Crypto API project where you can track latest crypto price changes.<br/>
 Made with: React, CSS, MaterialUI.
 
+Live Demo: [TokenTrace](https://tokentrace.pages.dev/)
+
 API: [Coingecko API](https://www.coingecko.com/en/api)<br/>
 Inspired by [Binance](https://www.binance.com/en)<br/>
 
