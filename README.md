@@ -8,7 +8,7 @@ Crypto API project where you can track latest crypto price changes.<br/>
 Made with: React, CSS, MaterialUI.
 
 API: [Coingecko API](https://www.coingecko.com/en/api)<br/>
-Inspired by [Binance](www.binance.com)<br/>
+Inspired by [Binance](https://www.binance.com/en)<br/>
 
 ## Tech Used
 
